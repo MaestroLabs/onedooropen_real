@@ -100,7 +100,7 @@ class ExploreController < ApplicationController
       @content.publishedBy="mortal"
     end
     
-    if user.id == 26 #If ODO Team profile uploads content, publishedBy => 'ODO Team' so content appears on 'Motivational Mondays, Tuesdays...' section
+    if user.id == 1 #If ODO Team profile uploads content, publishedBy => 'ODO Team' so content appears on 'Motivational Mondays, Tuesdays...' section
       @content.publishedBy="ODOTeam"
     end
     

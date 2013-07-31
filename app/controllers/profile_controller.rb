@@ -65,7 +65,7 @@ class ProfileController < ApplicationController
       @content.publishedBy="mortal"
     end
     
-    if user.id == 26 #If ODO Team profile uploads content, publishedBy => 'ODO Team' so content appears on 'Motivational Mondays, Tuesdays...' section
+    if user.id == 1 #If ODO Team profile uploads content, publishedBy => 'ODO Team' so content appears on 'Motivational Mondays, Tuesdays...' section
       @content.publishedBy="ODOTeam"
     end
     
@@ -92,7 +92,7 @@ class ProfileController < ApplicationController
         else
           content.update_attributes(:publishedBy=>"mortal")
         end
-        if user.id == 26
+        if user.id == 1
           content.update_attributes(:publishedBy=>"ODOTeam")
         end
       end
