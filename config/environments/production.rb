@@ -15,7 +15,7 @@ Onedooropen::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  config.assets.precompile += %w( application.css )
 
   # Generate digests for assets URLs
   config.assets.digest = true
@@ -64,4 +64,17 @@ Onedooropen::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+  
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+   config.action_mailer.default_url_options = { :host => "http://onedooropen.com" }
+   config.action_mailer.smtp_settings = {
+         :address       => "smtpout.secureserver.net",
+         :port          => "80",
+         :authentication => :login,
+         :user_name      => "noreply@maestro-labs.com",
+         :password       => "Whatsup#345"
+   }  
+  
 end

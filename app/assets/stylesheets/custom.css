@@ -1,4 +1,3 @@
-@charset "utf-8";
 /* CSS Document */
 
 /* Container */
@@ -109,12 +108,12 @@
 }
 
 /*Highlight color*/
-::selection {
-	background: #ffea00; /* Safari */
+/*::selection {
+	background: #ffea00;
 	}
 ::-moz-selection {
-	background: #ffea00; /* Firefox */
-}
+	background: #ffea00;
+}*/
 
 /*.thumbnail > img {
   display: block;
@@ -357,7 +356,6 @@ footer {
 	top: 0;
 }
 
-
 h1,
 h2,
 h3,
@@ -369,7 +367,6 @@ h6 {
   font-weight: 300;
   line-height: 20px;
   color: inherit;
-  text-rendering: optimizelegibility;
 }
 
 .thumbnail {
@@ -547,7 +544,7 @@ a:hover .thumbnail-article {
   background-image: none;
   background-image: none;
   background-image: none;
-  background-repeat: none;
+  background-repeat: no-repeat;
   border: 1px solid #555;
   *border: 0;
   border-color: #555 #555 #555;
@@ -618,7 +615,7 @@ a:hover .thumbnail-article {
   background-image: none;
   background-image: none;
   background-image: none;
-  background-repeat: none;
+  background-repeat: no-repeat;
   border: 1px solid #ffea00;
   *border-color: #ffea00 #ffea00 #ffea00;
   border-color: rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0);
@@ -650,7 +647,7 @@ a:hover .thumbnail-article {
   background-image: none;
   background-image: none;
   background-image: none;
-  background-repeat: none;
+  background-repeat: no-repeat;
   border: 1px solid #CCC;
   *border-color: #CCC #CCC #CCC;
   border-color: rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0);
@@ -682,7 +679,7 @@ a:hover .thumbnail-article {
   background-image: none;
   background-image: none;
   background-image: none;
-  background-repeat: none;
+  background-repeat: no-repeat;
   border: 1px solid #27ae60;
   *border-color: #27ae60 #27ae60 #27ae60;
   border-color: rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0);
@@ -714,7 +711,7 @@ a:hover .thumbnail-article {
   background-image: none;
   background-image: none;
   background-image: none;
-  background-repeat: none;
+  background-repeat: no-repeat;
   border: 1px solid #eee;
   *border-color: #27ae60 #27ae60 #27ae60;
 }
@@ -896,7 +893,7 @@ body {
 
 /* Icons */
 [class^="icon-"],[class*="icon-"]{
-	background-image: url(/assets/glyphicons-halflings.png)	
+	background-image: url(/assets/glyphicons-halflings.png);	
 }
 
 .icon-white{
