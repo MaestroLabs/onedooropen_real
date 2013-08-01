@@ -47,13 +47,5 @@ end
   def article_iframe(article_url)
     %Q{<div id="iframe-percent"><iframe class="span12" height="400px" src="#{article_url}"></iframe></div>}
   end
- 
- 
- def resetDailyUp
- contents=Content.all
- contents.each do |content|
-   content.update_attributes(:dailyupvotes=>0)
- end
-end
-handle_asynchronously :resetDailyUp, :run_at => Proc.new { 2.minutes.from_now }
+
 end

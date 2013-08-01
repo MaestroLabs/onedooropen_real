@@ -125,7 +125,6 @@ class ExploreController < ApplicationController
     end
     redirect_to(:action => 'index')
   end
-  #handle_asynchronously :resetDailyUp, :run_at => Proc.new { 2.minutes.from_now }
   
   def makehiddengem
     currentUser = User.find(session[:user_id])
