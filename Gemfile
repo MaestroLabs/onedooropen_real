@@ -14,6 +14,7 @@ gem 'acts-as-taggable-on', '~> 2.3.1'
 gem 'bootstrap-will_paginate'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
+gem 'delayed_job_active_record'
 
 
 # Gems used only for assets and not required
